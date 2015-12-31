@@ -268,14 +268,14 @@ Developers may implement custom tokens in their dapps, and use these tokens as t
 
 ### 6. Sources
 
-[1] Node.js Organization. [https://nodejs.org](https://nodejs.org)
-[2][https://github.com/nwjs/nw.js]
-[3][https://github.com/atom/electron]
-[4]Bitshares DPoS. [http://wiki.bitshares.org/index.php/BitShares]
-[5][https://en.wikipedia.org/wiki/Peer-to-peer]
-[6][https://en.wikipedia.org/wiki/Seccomp]
-[7][http://npmjs.org]
-[8]David Johnston. Decentralized Applications. [https://github.com/DavidJohnstonCEO/DecentralizedApplications/blob/master/README.md]
-[9] Factom. Merkle tree. [https://github.com/FactomProject/FactomDocs/blob/master/Factom_Whitepaper.pdf]
-[10]Sia. A decentralized storage solution. [http://siacoin.com]
-[11]Sidechains. Deposit/withdrawal sidechain. [https://www.blockstream.com/sidechains.pdf]
+* [1] Node.js Organization. [https://nodejs.org](https://nodejs.org)
+* [2][https://github.com/nwjs/nw.js]
+* [3][https://github.com/atom/electron]
+* [4]Bitshares DPoS. [http://wiki.bitshares.org/index.php/BitShares]
+* [5][https://en.wikipedia.org/wiki/Peer-to-peer]
+* [6][https://en.wikipedia.org/wiki/Seccomp]
+* [7][http://npmjs.org]
+* [8]David Johnston. Decentralized Applications. [https://github.com/DavidJohnstonCEO/DecentralizedApplications/blob/master/README.md]
+*[9] Factom. Merkle tree. [https://github.com/FactomProject/FactomDocs/blob/master/Factom_Whitepaper.pdf]
+*[10]Sia. A decentralized storage solution. [http://siacoin.com]
+*[11]Sidechains. Deposit/withdrawal sidechain. [https://www.blockstream.com/sidechains.pdf]
