@@ -51,7 +51,7 @@ __Written by__
 
 
 ### 1. Introduction
-#### __1a. What is Crypti __
+#### __1a. What is Crypti__
 Crypti is a next generation platform that allows for the development and distribution of JavaScript based decentralized applications using an easy to use, fully featured ecosystem. 
 Through Crypti, developers can build, publish, distribute, and monetize their applications within a custom built cryptocurrency powered system that utilizes custom blockchains, smart contracts, cloud storage, and computing nodes; all from within one industry solution.
 
@@ -89,7 +89,7 @@ The user does not have to download the blockchain anymore, which means the appli
 If you want to run a delegate node, you can register a delegate account with the lite client. However, it is not possible to run a delegate from it, i.e. creating new blocks. For this you need the full client.
 
 Dapp users can use the lite client for accessing their installed dapps as well. The dapps API and the peers API are available to developers. 
-They make it possible to create quickly and easily Javascript dapps with nw.js2 or Electron3.
+They make it possible to create quickly and easily Javascript dapps with nw.js[[2]](https://github.com/nwjs/nw.js) or Electron[[3]](https://github.com/atom/electron).
 
 The full client is the best solution for super users, delegates and developers. It is available for Windows, Mac OS and Linux. Though it is only possible to be a delegate with the Linux client. Lite client users can connect to the full clients to access the network. 
 They can also use them to make API calls, if it is allowed by the full client owner. All full client users download the blockchain from each other through a peer-to-peer connection.
@@ -109,7 +109,7 @@ The backend infrastructure for the mobile client will mirror that of our desktop
 
 ### 3. Consensus
 
-Crypti is based on the DPoS4 (Delegated Proof of Stake) consensus mechanism. This method of consensus was originally created by the BitShares team.
+Crypti is based on the DPoS[[4]](http://wiki.bitshares.org/index.php/BitShares) (Delegated Proof of Stake) consensus mechanism. This method of consensus was originally created by the BitShares team.
 
 DPoS is based on delegates creating blocks. Delegates are trusted accounts which are elected to be “Active Delegates”. The 101 delegate accounts with the most votes create the blocks. Other delegates are listed as “Standby Delegates”, and can advance to the top 101 list by receiving votes from the other Crypti owners. All users of Crypti have 101 votes available to elect their favorite delegates into the top 101 list. The weight of each of the 101 votes is proportional to the amount of XCR the user has in the wallet the votes are cast from. This total amount is shown on the delegate list as an “Approval”, and is listed as a percentage of the 100 million XCR available that is voted for that delegate.
 
@@ -133,11 +133,20 @@ The default network fee for sending an XCR transaction is 0.1%. For example, a 1
 
 __The following is a list of fees for different types of transactions:__
 
-0.1% of amount sent for a spend transaction.5 XCR for registering a second passphrase.100 XCR for registering a username.100 XCR for registering as a delegate.1 XCR to add a contact.500 XCR to register a dapp.5 XCR per member for registering a multi-signature group.Delegates receive the fees from all transactions of the last block cycle (101 blocks). Fees are split equally between all delegates who created a block in that cycle. Delegates who missed creating a block assigned to them during that cycle are not paid.
+* 0.1% of amount sent for a spend transaction
+* .5 XCR for registering a second passphrase
+* .100 XCR for registering a username
+* .100 XCR for registering as a delegate
+* .1 XCR to add a contact
+* .500 XCR to register a dapp
+* .5 XCR per member for registering a multi-signature group.
+
+Delegates receive the fees from all transactions of the last block cycle (101 blocks). 
+Fees are split equally between all delegates who created a block in that cycle. Delegates who missed creating a block assigned to them during that cycle are not paid.
 
 #### __3c. Peer__-__to__-__Peer__
 
-We are using a standard P2P network5, which works on top of the http protocol, and uses json formatted data as a method of data inter-change. The P2P module captures the following information about each peer:
+We are using a standard P2P network[[5]](https://en.wikipedia.org/wiki/Peer-to-peer), which works on top of the http protocol, and uses json formatted data as a method of data inter-change. The P2P module captures the following information about each peer:
 
 Version
 OSIP
@@ -151,7 +160,13 @@ Crypti allows users to register usernames. Which act as an alias to your account
 
 The network fee for username registration is 100 XCR. Usernames may contain the following characters:
 
-Traditional Alphabet (Upper & Lower Case): A-Z, a-zNumbers: 0-9Special Characters: !, @, $, &, and __.__Each username is unique. The length is currently limited to 16 characters. Currently, it is not possible to remove a username from your account.
+* Traditional Alphabet (Upper & Lower Case): A-Z, a-z
+* Numbers: 0-9
+* Special Characters: !, @, $, &, and __.__
+* Each username is unique. 
+* The length is currently limited to 16 characters. 
+
+Currently, it is not possible to remove a username from your account.
 
 #### __4b. Contacts__
 Crypti allows users to maintain a contact or friends list. This feature can be used to store frequently used accounts, but can also be used as a reputation system. If an account has many confirmed contacts, it may be considered more reputable than one without.
@@ -174,12 +189,12 @@ The owners of a multi-signature group may change the rules of the group at any t
 ### 5. Decentralized Applications
 #### __5a. Virtual Machine__
 
-The Crypti Virtual Machine is a safe Node.js VM. It can run untrusted JavaScript code. Which is a fork of Node.js that uses an API to connect to Crypti and connect Crypti to the VM. The Crypti VM is like the standard Node.js except that it disallows low level operations. For security, Crypti uses Seccomp6. This is a sandbox mechanism implemented in the Linux kernel.
+The Crypti Virtual Machine is a safe Node.js VM. It can run untrusted JavaScript code. Which is a fork of Node.js that uses an API to connect to Crypti and connect Crypti to the VM. The Crypti VM is like the standard Node.js except that it disallows low level operations. For security, Crypti uses Seccomp[[6]](https://en.wikipedia.org/wiki/Seccomp). This is a sandbox mechanism implemented in the Linux kernel.
 
-Developers can choose from a large library of NPM modules and use all of the power of JavaScript asynchronous programming7. The intent is for the global JavaScript community to be able to build within Crypti on top of established and accessible code.
+Developers can choose from a large library of NPM modules and use all of the power of JavaScript asynchronous programming[[7]](http://npmjs.org). The intent is for the global JavaScript community to be able to build within Crypti on top of established and accessible code.
 
 #### __5b. Dapps__
-A dapp is a decentralized application8 written in Node.js and JavaScript. It works with the Crypti VM using either the Crypti or soon the Bitcoin consensus algorithm. The Crypti VM is a scalable Node.js application that allows Node.js and JavaScript developers to write dapps. With current web technologies (HTML5/CSS3/JavaScript) the developer is able to create a powerful UI. Dapps can use custom Node.js packages from NPM (the Node.js package manager).
+A dapp is a decentralized application[[8]](https://github.com/DavidJohnstonCEO/DecentralizedApplications/blob/master/README.md) written in Node.js and JavaScript. It works with the Crypti VM using either the Crypti or soon the Bitcoin consensus algorithm. The Crypti VM is a scalable Node.js application that allows Node.js and JavaScript developers to write dapps. With current web technologies (HTML5/CSS3/JavaScript) the developer is able to create a powerful UI. Dapps can use custom Node.js packages from NPM (the Node.js package manager).
 
 Regular users can launch the dapps on a Linux *Crypti: Delegate & Developer Edition* client or via the regular Crypti lite client on Windows or Mac OS.
 
@@ -193,9 +208,18 @@ Developers write dapps in JavaScript which allows the use of the full ecosystem 
 
 To make the dapp development as easy as possible the Crypti Foundation released crypti-cli, a command line interface which creates your own testnet and dapp environment by answering a few simple questions. Additionally we prepared a Dapp Toolkit, which gives developers a reference implementation of the most important dapp functionalities, and serves as a solid foundation upon which they can start building their decentralized applications.
 
-Many libraries have been written to provide the full Crypti API functionality for developers “straight out of the box”. This API includes:
+Many libraries have been written to provide the full Crypti API functionality for developers “straight out of the box”. 
 
-Consensus APICrypti APIBitcoin APIDatabase APITo open a dapp, the format: http://ip:port/dapps/<dapp_id/username> is used.
+This API includes:
+
+* Consensus API
+* Crypti API
+* Bitcoin API
+* Database API
+
+To open a dapp, the format:  
+`http://ip:port/dapps/<dapp_id/username>`
+is used.
 
 #### __5d. Dapps Computation__
 
@@ -244,16 +268,14 @@ Developers may implement custom tokens in their dapps, and use these tokens as t
 
 ### 6. Sources
 
-Node.js Organization. [https://nodejs.org][2][https://github.com/nwjs/nw.js][3][https://github.com/atom/electron][4]Bitshares DPoS. [http://wiki.bitshares.org/index.php/BitShares][5][https://en.wikipedia.org/wiki/Peer-to-peer][6][https://en.wikipedia.org/wiki/Seccomp][7][http://npmjs.org][8]David Johnston. Decentralized Applications. [https://github.com/DavidJohnstonCEO/DecentralizedApplications/blob/master/README.md][9]Factom. Merkle tree. [https://github.com/FactomProject/FactomDocs/blob/master/Factom_Whitepaper.pdf][10]Sia. A decentralized storage solution. [http://siacoin.com][11]Sidechains. Deposit/withdrawal sidechain. [https://www.blockstream.com/sidechains.pdf][12]
-  [1]: 
-  [2]: https://nodejs.org
-  [3]: https://github.com/nwjs/nw.js/
-  [4]: https://github.com/atom/electron
-  [5]: http://wiki.bitshares.org/index.php/BitShares
-  [6]: https://en.wikipedia.org/wiki/Peer-to-peer
-  [7]: https://en.wikipedia.org/wiki/Seccomp
-  [8]: http://npmjs.org
-  [9]: https://github.com/DavidJohnstonCEO/DecentralizedApplications/blob/master/README.md
-  [10]: https://github.com/FactomProject/FactomDocs/blob/master/Factom_Whitepaper.pdf?raw=true
-  [11]: http://siacoin.com
-  [12]: https://www.blockstream.com/sidechains.pdf
+[1] Node.js Organization. [https://nodejs.org](https://nodejs.org)
+[2][https://github.com/nwjs/nw.js]
+[3][https://github.com/atom/electron]
+[4]Bitshares DPoS. [http://wiki.bitshares.org/index.php/BitShares]
+[5][https://en.wikipedia.org/wiki/Peer-to-peer]
+[6][https://en.wikipedia.org/wiki/Seccomp]
+[7][http://npmjs.org]
+[8]David Johnston. Decentralized Applications. [https://github.com/DavidJohnstonCEO/DecentralizedApplications/blob/master/README.md]
+[9] Factom. Merkle tree. [https://github.com/FactomProject/FactomDocs/blob/master/Factom_Whitepaper.pdf]
+[10]Sia. A decentralized storage solution. [http://siacoin.com]
+[11]Sidechains. Deposit/withdrawal sidechain. [https://www.blockstream.com/sidechains.pdf]
