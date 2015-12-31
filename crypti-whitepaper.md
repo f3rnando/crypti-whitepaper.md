@@ -21,45 +21,45 @@ __Written by__
 # Table of Contents
 
 1. Introduction
-	a. What is Crypti
-	b. Technical Background
-	c. Key Innovation Factors
-	d. Crypti Components
+	1. What is Crypti
+	2. Technical Background
+	3. Key Innovation Factors
+	4. Crypti Components
 2. Clients
-	a. Crypti (Lite Client)
-	b. Crypti: Delegate & Developer Edition (Full Client)
-	c. Mobile Client
+	1. Crypti (Lite Client)
+	2. Crypti: Delegate & Developer Edition (Full Client)
+	3. Mobile Client
 3. Consensus
-	a. Delegates
-	b. Network fees
-	c. Peer-to-Peer
+	1. Delegates
+	2. Network fees
+	3. Peer-to-Peer
 4. Core Features
-	a. Usernames
-	b. Contacts
-	c. Multi-signatures
+	1. Usernames
+	2. Contacts
+	3. Multi-signatures
 5. Decentralized Applications
-	a. Virtual Machine
-	b. Dapps
-	c. Dapps Development
-	d. Dapps Computation
-	e. Dapps Consensus
-	f. Dapps Master Nodes
-	g. Dapps Storage
-	h. Dapps Deposits / Withdrawals
-	i. Dapps Tokens
+	1. Virtual Machine
+	2. Dapps
+	3. Dapps Development
+	4. Dapps Computation
+	5. Dapps Consensus
+	6. Dapps Master Nodes
+	7. Dapps Storage
+	8. Dapps Deposits / Withdrawals
+	9. Dapps Tokens
 6. Sources
 
 
 ### 1. Introduction
-#### __1a. What is Crypti__
+#### __i. What is Crypti__
 Crypti is a next generation platform that allows for the development and distribution of JavaScript based decentralized applications using an easy to use, fully featured ecosystem. 
 Through Crypti, developers can build, publish, distribute, and monetize their applications within a custom built cryptocurrency powered system that utilizes custom blockchains, smart contracts, cloud storage, and computing nodes; all from within one industry solution.
 
-#### __1b. Technical__ __Background__
+#### __ii. Technical__ __Background__
 
 Crypti is written in Node.js[[1]](http://nodejs.org) on the backend, and HTML5 and CSS3 on the frontend. It works asynchronously and allows for fast processing of all functions such as network transactions. The database uses SQLite to allow the use and running of complex queries.
 
-#### __1c. Key Innovation Factors__
+#### __iii. Key Innovation Factors__
 
 Crypti is the first decentralized application solution written entirely in Node.js. This opens up the Crypti ecosystem to thousands of current developers with no additional skills necessary. Any web developer who is already familiar with JavaScript and Node.js can immediately jump in and begin building decentralized applications from day one.
 
@@ -68,7 +68,7 @@ Our core goal with Crypti was to create an entire plug and play system that woul
 To top it all off, all of these cloud functions are run by the users and Crypti delegates who are paid through a built in invoice system (or by the network itself in the case of delegates) and paid in XCR (Crypti’s own cryptocurrency) or BTC. It truly is a one stop shop for application development that provides a cutting edge, affordable, and forward-thinking solution. 
 
 
-#### __1d. Crypti Components include:__
+#### __iv. Crypti Components include:__
 
 1.	Decentralized P2P hosting of dapps
 2.	Decentralized P2P storage for dapps
@@ -78,7 +78,7 @@ To top it all off, all of these cloud functions are run by the users and Crypti 
 6.	Developer tools: crypti-cli / Toolkit
 
 ### 2. Clients
-#### __2a. Crypti (Lite Client)__
+#### __i. Crypti (Lite Client)__
 
 The regular user will mostly use the lite client, a light-weight Crypti client, to access their Crypti account.
 
@@ -94,14 +94,14 @@ They make it possible to create quickly and easily Javascript dapps with nw.js[[
 The full client is the best solution for super users, delegates and developers. It is available for Windows, Mac OS and Linux. Though it is only possible to be a delegate with the Linux client. Lite client users can connect to the full clients to access the network. 
 They can also use them to make API calls, if it is allowed by the full client owner. All full client users download the blockchain from each other through a peer-to-peer connection.
 
-#### __2b. Crypti: Delegate & Developer Edition (Full Client)__
+#### __2ii. Crypti: Delegate & Developer Edition (Full Client)__
 
 The full client is the best solution for super users, delegates and developers. It is available for Windows, Mac OS and Linux. Though it is only possible to be a delegate with the Linux client. Lite client users can connect to the full clients to access the network. 
 They can also use them to make API calls, if it is allowed by the full client owner. All full client users download the blockchain from each other through a peer-to-peer connection.
 
 Dapp users can use the lite client for accessing their installed dapps as well. The dapps API and the peers API are available to developers. They make it possible to quickly and easily create JavaScript dapps using nw.js2 or Electron3.
 
-#### __2c. Mobile Client__
+#### __2iii. Mobile Client__
 
 The mobile client allows the user to access their Crypti account while on the go. It will be available for both iOS and Android and featured in the Apple and Google Play app stores.
 
@@ -117,7 +117,7 @@ Delegate promotion to the top 101 or demotion to the standby list happens at the
 
 In DPoS, forks can occur, but the longest fork wins. Delegates must be online all of the time and have sufficient uptime. Uptime is used to catalogue the reliability of a node by logging each time that it misses a block that was assigned to it. Users vote for the top 101 delegates based on several factors, uptime being one key factor used to make a determination. If a delegate drops below a certain rating, users may remove votes from the delegate in question due to poor performance.
 
-#### __3a. Delegates__
+#### __i. Delegates__
 
 The function of delegates is covered above in the Consensus section.
 
@@ -125,7 +125,7 @@ To be a delegate, a user needs to register a delegate account. This is accomplis
 
 New delegates start as standby delegates. Standby delegates begin with an approval rating of 0% and will need to accrue votes from the Crypti community in order to advance to be one of the top 101 delegates. Block generation is performed by the top 101 delegates only. If you are in standby status, you will not forge any blocks.
 
-#### __3b. Network fees__
+#### __ii. Network fees__
 
 All valid transactions in the network must be processed. Delegates process transactions and store them in new blocks. For this work, the delegates receive a fee. All transactions in the network must contain some type of fee as a spam countermeasure.
 
@@ -144,7 +144,7 @@ __The following is a list of fees for different types of transactions:__
 Delegates receive the fees from all transactions of the last block cycle (101 blocks). 
 Fees are split equally between all delegates who created a block in that cycle. Delegates who missed creating a block assigned to them during that cycle are not paid.
 
-#### __3c. Peer__-__to__-__Peer__
+#### __iii. Peer__-__to__-__Peer__
 
 We are using a standard P2P network[[5]](https://en.wikipedia.org/wiki/Peer-to-peer), which works on top of the http protocol, and uses json formatted data as a method of data inter-change. The P2P module captures the following information about each peer:
 
@@ -154,7 +154,7 @@ Port
 
 ### 4. Core Features
 
-#### __4a. Usernames__
+#### __i. Usernames__
 
 Crypti allows users to register usernames. Which act as an alias to your account. Other users can send transactions to this username and the linked account will then receive it. This eliminates the need to remember long account addresses.
 
@@ -168,14 +168,14 @@ The network fee for username registration is 100 XCR. Usernames may contain the 
 
 Currently, it is not possible to remove a username from your account.
 
-#### __4b. Contacts__
+#### __ii. Contacts__
 Crypti allows users to maintain a contact or friends list. This feature can be used to store frequently used accounts, but can also be used as a reputation system. If an account has many confirmed contacts, it may be considered more reputable than one without.
 
 Contacts work like followers on Twitter. A user is added to the contact list, which will then show as a pending contact request in the user's wallet. Regardless of whether or not the other user accepts the request, they will be shown in the contact list. Once the other user accepts the request, the requester will be added to his contact list as well. Both parties now have a new confirmed contact.
 
 The network fee for adding a new contact or accepting an incoming request is 1 XCR.
 
-#### __4c. Multi-signatures__
+#### __iii. Multi-signatures__
 Crypti allows users to create a multi-signature group. A multi-signature group consists of several Crypti users, called group members. Transactions from multi-signature groups can be configured to require some or all signatories for approval.
 
 *To achieve this a **M of N* multi-signature architecture is implemented. All members of a multi-signature group (N) are added, up to a maximum of 16 signatories, and then the required number (M) of signatures needed to approve a transaction is specified.
@@ -187,13 +187,13 @@ Once you initiate a transaction from the multi-signature group, all members will
 The owners of a multi-signature group may change the rules of the group at any time with the approval of at least M of the signatories.
 
 ### 5. Decentralized Applications
-#### __5a. Virtual Machine__
+#### __i. Virtual Machine__
 
 The Crypti Virtual Machine is a safe Node.js VM. It can run untrusted JavaScript code. Which is a fork of Node.js that uses an API to connect to Crypti and connect Crypti to the VM. The Crypti VM is like the standard Node.js except that it disallows low level operations. For security, Crypti uses Seccomp[[6]](https://en.wikipedia.org/wiki/Seccomp). This is a sandbox mechanism implemented in the Linux kernel.
 
 Developers can choose from a large library of NPM modules and use all of the power of JavaScript asynchronous programming[[7]](http://npmjs.org). The intent is for the global JavaScript community to be able to build within Crypti on top of established and accessible code.
 
-#### __5b. Dapps__
+#### __ii. Dapps__
 A dapp is a decentralized application[[8]](https://github.com/DavidJohnstonCEO/DecentralizedApplications/blob/master/README.md) written in Node.js and JavaScript. It works with the Crypti VM using either the Crypti or soon the Bitcoin consensus algorithm. The Crypti VM is a scalable Node.js application that allows Node.js and JavaScript developers to write dapps. With current web technologies (HTML5/CSS3/JavaScript) the developer is able to create a powerful UI. Dapps can use custom Node.js packages from NPM (the Node.js package manager).
 
 Regular users can launch the dapps on a Linux *Crypti: Delegate & Developer Edition* client or via the regular Crypti lite client on Windows or Mac OS.
@@ -202,7 +202,7 @@ Regular users can launch the dapps on a Linux *Crypti: Delegate & Developer Edit
 
 *Dapp Use Cases*
 
-#### __5c. Dapps Development__
+#### __iii. Dapps Development__
 
 Developers write dapps in JavaScript which allows the use of the full ecosystem of Node.js packages powered by NPM. The Crypti VM is integrated with the Crypti API. This API interfaces with the Crypti Blockchain and even with the Bitcoin blockchain. Each dapp runs in the Crypti VM, which removes many possible attack vectors and thus makes it much safer for the end user to start dapps on their local machine. The Crypt API is accessible by the dapp.
 
@@ -221,7 +221,7 @@ To open a dapp, the format:
 `http://ip:port/dapps/<dapp_id/username>`
 is used.
 
-#### __5d. Dapps Computation__
+#### __iv. Dapps Computation__
 
 The Crypti Foundation is developing a system that allows for billing of CPU time. Where the Crypti VM uses its API to track how much CPU time is used to run a dapp. As a result, owners of nodes can run dapp master nodes in return for XCR or BTC payments.
 
@@ -229,7 +229,7 @@ The purpose of Crypti is to create a unique ecosystem, of which computation is o
 
 This is referred to as Dapps Billing. You can compare it to the Heroku platform for  deploying applications.
 
-#### __5e. Dapps Consensus__
+#### __v. Dapps Consensus__
 Each Dapp has its own unique private side chain which operates in synchronization with the Crypti block time and current block height.
 
 Dapp sidechains are managed by a group of up to 101 master nodes, each of which have block generation enabled specifically for an individual dapp. The primary role of each master node is to process transactions and signify the validity of each block generated on the sidechain.
@@ -242,10 +242,10 @@ The motivations behind this form of consensus are to prevent unnecessary enlarge
 
 It should be noted as an optional alternative in the soon future, Crypti dapps can instead be secured by the Bitcoin blockchain using this same method.
 
-#### __5f. Dapps Master Nodes__
+#### __vi. Dapps Master Nodes__
 Dapp master nodes are Crypti nodes with an installed dapp and with block generation enabled specifically for that dapp. Dapp owners need to approve individual Crypti accounts to be permitted to be a master node. The nodes process transactions and generate new blocks which are then secured by the Crypti Blockchain, making them the core of the dapp system.
 
-#### __5g. Dapps Storage__
+#### __vii. Dapps Storage__
 It is possible to host the dapps on decentralized peer-to-peer storage networks. The developers can also store data used by the dapps on those networks. There are already a few developed systems on the market and we are testing with our dapp platform. The nodes which host the dapps or store data will receive a fee for this service. The first decentralized storage solution we support is Sia10. Dapps are stored as a zip package, including the installation packages in Node.js which information are saved in the the package.json file.
 
 As an alternative it is also possible to store dapps using existing centralized solutions, the first will be: GitHub. Allowing developers to host a given dapp’s source code and related assets within a GitHub hosted repository.
@@ -255,14 +255,14 @@ Once the dapps platform has had chance to mature, developers will be able to upd
 
 
 
-#### __5h. Dapps Deposits / Withdrawals__
+#### __viii. Dapps Deposits / Withdrawals__
 Developers can use either XCR or BTC in their dapps11. Users of a dapp may deposit or withdraw funds from any given dapp. When XCR or BTC are sent to a dapp address, the funds appear in the dapp account. The funds will then become available for use within the dapp. This works the same way for BTC deposits as it does with XCR. BTC is sent to a special dapp address and then appears in the dapp Bitcoin wallet.
 
 Dapp accounts are a special type of account created by the owner of a dapp. All deposited XCR or BTC will be stored in the associated addresses. For security reasons, only the use of multi-signature dapp accounts with trusted signers is recommended.
 
 Withdrawals from dapps are processed by master nodes. When a withdrawal request is sent, the dapp master node processes it and moves the funds to the specified withdrawal address in the Crypti or Bitcoin blockchain.
 
-#### __5i. Dapps Tokens__
+#### __ix. Dapps Tokens__
 Developers may implement custom tokens in their dapps, and use these tokens as the main currencies within their dapps. These tokens may be used in the same way as XCR or BTC, but the tokens cannot be moved directly from one dapp sidechain to another dapp sidechain. They must only move via the Crypti main chain.
 
 
