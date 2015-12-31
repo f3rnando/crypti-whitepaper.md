@@ -61,36 +61,37 @@ Con Crypti, los desarrolladores pueden crear, publicar, distribuír y monetizar 
 
 #### __ii. Trasfondo Técnico__
 
-Crypti está escrito en Node.js[[1]](http://nodejs.org) en el backend, y HTML5 y CSS3 en el frontend. Trabaja asincrónicamente y permite el proceso rapido de todas las funciones tales como las transacciones de la red. La base de datos usa SQLite para habilitar el uso de consultas complejas.
+Crypti está escrito en Node.js[[1]](http://nodejs.org) en el backend, y HTML5 y CSS3 en el frontend. Trabaja asincrónicamente y permite el proceso rápido de las funciones tal como las transacciones de la red. La base de datos usa SQLite para habilitar el uso de consultas complejas.
 
 #### __iii. Factores clave de innovación__
 
-Crypti is the first decentralized application solution written entirely in Node.js. This opens up the Crypti ecosystem to thousands of current developers with no additional skills necessary. Any web developer who is already familiar with JavaScript and Node.js can immediately jump in and begin building decentralized applications from day one.
+Crypti es la primera solución de aplicaciones descentralizadas escrita completamente en Node.js. Esto abre el ecosistema de Crypti a miles de actuales desarrollador sin la necesidad de habilidades adicionales. Cualquier desarrollador web que ya esté familiarizado con JavaScript y Node.js puede entrar de inmediato y comenzar a crear aplicaciones descentralizadas desde el primer dia.
 
-Our core goal with Crypti was to create an entire plug and play system that would allow developers to do everything from design, development, publication, and monetization, all from within one platform. By utilizing the Crypti ecosystem, developers can quickly deploy their JavaScript apps to Crypti Hosting & Storage Nodes, gain listing in the Crypti Dapp Store, and have immediate access to Crypti Compute Nodes for execution of the code. All while being backed by the integrity and security of the Crypti sidechain consensus functionality.
+Nuestra meta principal con Crypti era crear un sistema plug and play completo que permita a los desarrolladores hacer todo, desde el diseño, desarrollo, publicación, y monetización, desde una única plataforma descentralizada. En el ecosistema de Crypti, los desarrolladores pueden rápidamente implementar sus aplicaciones de JavaScript en los Nodos de Almacenamiento y Crypti Hosting, ser listados en el Dapp Store de Crypti, y tener acceso inmediato a los Nodos de Computos de Crypti para la ejecución del código. Todo ésto respaldado por la integridad y seguridad que otorga la funcionalidad de consenso del sidechain de Crypti.
 
-To top it all off, all of these cloud functions are run by the users and Crypti delegates who are paid through a built in invoice system (or by the network itself in the case of delegates) and paid in XCR (Crypti’s own cryptocurrency) or BTC. It truly is a one stop shop for application development that provides a cutting edge, affordable, and forward-thinking solution. 
+Para completar el círculo, todas estas funcionalidades de nube, son ejecutadas por los usuarios y delegados de Crypti, quienes reciben su paga a través de un sistema de pagos integrado (o por la red misma en el caso de los delegados) y en XCR (La cryptomoneda propia de Crypti) o en BTC. Verdaderamente es una herramienta única para el desarrollo de aplicaciones con tecnología de vanguardia, con costos razonables y un paradigma innovador.
 
 
-#### __iv. Crypti Components include:__
+#### __iv. Componentes Crypti:__
 
-1.	Decentralized P2P hosting of dapps
-2.	Decentralized P2P storage for dapps
-3.	Decentralized computing
-4.	Sidechain consensus for every dapp
-5.	Crypti and Bitcoin API interfaces
-6.	Developer tools: crypti-cli / Toolkit
+1.	Hosting P2P descentralizado para dapps
+2.	Almacenamiento P2P descentralizado para dapps
+3.	Cómputos descentralizados
+4.	Consenso en sidechain para cada dapp
+5.	Interfaces API de Crypti y Bitcoin
+6.	Herramientas de desarrollo: crypti-cli / Toolkit
 
-### 2. Clients
-#### __i. Crypti (Lite Client)__
+### 2. Clientes
+#### __i. Crypti (Cliente liviano)__
 
-The regular user will mostly use the lite client, a light-weight Crypti client, to access their Crypti account.
+El cliente liviano es generalmente usado por los usuarios regulares para acceder a sus cuentas de Crypti.
 
-The lite client is available for Windows and Mac OS. It does not require an installation process, as it utilizes modern web technologies. It does not act as a network node, as it only connects to other peers which are online via an http connection. This brings several advantages. 
+Está disponible para Windows y Mac OS. No conlleva instalación, ya que utiliza tecnologías web modernas. No actúa como nodo en la red, porque solo se conecta a otros peers que estén online via conexión http. Esto trae varias ventajas.
 
-The user does not have to download the blockchain anymore, which means the application itself stays very small. It does not broadcast secret keys through the network, all data is signed locally on your device. It is possible to make all types of transactions available. 
+El usuario no tiene que descargar el blockchain, lo que reduce considerablemente el tamaño de la aplicación. Tampoco hace broadcast de las claves secretas a través de la red, todos los datos son firmados localmente en el dispositivo del usuario.
+Permite hacer todos los tipos de transacciones disponibles. 
 
-If you want to run a delegate node, you can register a delegate account with the lite client. However, it is not possible to run a delegate from it, i.e. creating new blocks. For this you need the full client.
+Si el usuario desea servir un nodo delegado, puede registrar una cuenta de delegado con el cliente liviano. Pero no es posible correr un delegado desde el mismo, ej.: crear nuevos bloques. Para ello necesitará el cliente completo.
 
 Dapp users can use the lite client for accessing their installed dapps as well. The dapps API and the peers API are available to developers. 
 They make it possible to create quickly and easily Javascript dapps with nw.js[[2]](https://github.com/nwjs/nw.js) or Electron[[3]](https://github.com/atom/electron).
