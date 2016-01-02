@@ -93,22 +93,23 @@ Permite hacer todos los tipos de transacciones disponibles.
 
 Si el usuario desea servir un nodo delegado, puede registrar una cuenta de delegado con el cliente liviano. Pero no es posible correr un delegado desde el mismo, ej.: crear nuevos bloques. Para ello necesitará el cliente completo.
 
-Dapp users can use the lite client for accessing their installed dapps as well. The dapps API and the peers API are available to developers. 
-They make it possible to create quickly and easily Javascript dapps with nw.js[[2]](https://github.com/nwjs/nw.js) or Electron[[3]](https://github.com/atom/electron).
+Los usuarios de las dapps tambien pueden usar el cliente liviano para acceder a sus dapps instaladas. La API de Dapps y de peers están disponibles para los desarrolladores.
+Gracias a éstas es posible crear rápida y facilmente dapps en JavaScript con nw.js[[2]](https://github.com/nwjs/nw.js) ó Electron[[3]](https://github.com/atom/electron).
 
-The full client is the best solution for super users, delegates and developers. It is available for Windows, Mac OS and Linux. Though it is only possible to be a delegate with the Linux client. Lite client users can connect to the full clients to access the network. 
-They can also use them to make API calls, if it is allowed by the full client owner. All full client users download the blockchain from each other through a peer-to-peer connection.
+El cliente completo sin embargo es la mejor ópción para usuarios avanzaos, delegados y desarrolladores. Está disponible para Windows, Mac OS y GNU/Linux. Sin embargo sólo en el cliente de Linux es posible ser delegado. Los usuarios del cliente liviano se pueden conectar a los clientes completos para acceder a la red.
 
-#### __2ii. Crypti: Delegate & Developer Edition (Full Client)__
+Tambien puede usarse para hacer llamadas al API, siempre que esté permitido por el propietario del cliente completo. Todos los usuarios del cliente completo descargan el blockchain desde otros usuarios a través de una conexión P2P.
 
-The full client is the best solution for super users, delegates and developers. It is available for Windows, Mac OS and Linux. Though it is only possible to be a delegate with the Linux client. Lite client users can connect to the full clients to access the network. 
-They can also use them to make API calls, if it is allowed by the full client owner. All full client users download the blockchain from each other through a peer-to-peer connection.
+#### __2ii. Crypti: Delegate & Developer Edition (Cliente completo)__
 
-Dapp users can use the lite client for accessing their installed dapps as well. The dapps API and the peers API are available to developers. They make it possible to quickly and easily create JavaScript dapps using nw.js2 or Electron3.
 
-#### __2iii. Mobile Client__
+El cliente completo sin embargo es la mejor ópción para usuarios avanzaos, delegados y desarrolladores. Está disponible para Windows, Mac OS y GNU/Linux. Sin embargo sólo en el cliente de Linux es posible ser delegado. Los usuarios del cliente liviano se pueden conectar a éstos clientes completos para acceder a la red.
 
-The mobile client allows the user to access their Crypti account while on the go. It will be available for both iOS and Android and featured in the Apple and Google Play app stores.
+Tambien puede usarse para hacer llamadas al API, siempre que esté permitido por el propietario del cliente completo. Todos los usuarios del cliente completo descargan el blockchain desde otros usuarios a través de una conexión P2P.
+
+#### __2iii. Cliente *Mobile*__
+
+El cliente *mobile* permite al usuario acceder a su cuenta Crypti en cualquier lado. Estará disponible tanto para IOS y Android y destacada en el app store de Apple y Google Play.
 
 The backend infrastructure for the mobile client will mirror that of our desktop solution. The real change comes in the form of additions and tweaks to the user interface which will allow for a tailored experience on mobile devices. The app has been custom designed to provide a familiar and easy to use mobile interface, much like the Bitcoin or Banking apps you already use on a daily basis. It will also allow you to launch all of your favorite dapps from within the app itself. In the future, we plan to integrate device specific functionalities like the ability to utilize the fingerprint or retinal scan capabilities for added security on your account.
 
