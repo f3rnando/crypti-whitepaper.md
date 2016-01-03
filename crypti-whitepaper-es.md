@@ -37,7 +37,7 @@ __Traducido por__
 	1. Delegados
 	2. Comisión de red
 	3. Peer-to-Peer
-4. Core Features
+4. Características Fundamentales
 	1. Nombres de usuario
 	2. Contactos
 	3. Multi-firmas
@@ -119,7 +119,7 @@ Permitirá también lanzar todas tus Dapps favoritas desde la propia aplicación
 
 ### 3. Consenso
 
-Crypti se basa en el mecanismo de consenso denominado DPoS[[4]](http://wiki.bitshares.org/index.php/BitShares) (Delegated Proof of Stake ó Prueba de Stake delegada). Este método de consenso fue creado originalmente por el equipo de BitShares.
+Crypti se basa en el mecanismo de consenso denominado DPoS[[4]](http://wiki.bitshares.org/index.php/BitShares) (Delegated Proof of Stake ó Prueba de Participación delegada). Este método de consenso fue creado originalmente por el equipo de BitShares.
 
 DPoS se basa en delegados creando bloques. Los mismos son cuentas confiables, elegidas para ser "Delegados Activos". Las 101 cuentas de delegado con la mayor cantidad de votos crean los bloques. Las restantes cuentas de delegados se denominan “Standby Delegates” o "Delegados en espera", y pueden avanzar hacial al listado de top 101 si reciben los votos suficientes de otros usuarios Crypti. Todos los usuarios tienen disponibles 101 votos para introducir a sus delegados favoritos en la lista de top 101. El peso de cada uno de los 101 votos es proporcional al monto de XCR que el usuario posee en el *wallet* desde el cual emite los mismos. Este monto total se muestra en el listado de delegados como “Approval” o "Aprobación", y se lista como porcentaje de los 100 millones de XCR disponibles con respecto a los votos de cada delegado.
 
@@ -134,7 +134,6 @@ En DPoS, pueden ocurrir *forks* (derivaciones), pero el fork mas largo gana. Los
 
 La función de los delegados es descrita en la sección anterior, titulada "Consenso".
 
-
 Un usuario debe registrar una cuenta de delegado para poder serlo. Esto se logra desde la interfaz de usuario tanto del cliente liviano como el completo. Ten en cuenta que la generación de bloques solo es posible en el cliente completo, lo que significa que es posible crear una cuenta de delegado en ambos *wallets* pero solo en el completo se pueden realizar las tareas de delegado. El numero de cuenta y nombre de usuario serán los mismos luego de la registración como delegado. Todas las cuentas Crypti pueden ser votadas como delegados.
 
 Los nuevos delegados, empiezan como delegados "en espera". Los mismos comienzan con un porcentaje de aprobación de 0 (cero) y necesitarán juntar votos de la comunidad Crypti para poder avanzar hacia la lista de los 101 más votados y convertirse efectivamente en un delegado activo.
@@ -143,34 +142,35 @@ Mientras estés en estado de espera, no generarás ningún bloque.
 
 #### __ii. Comisiones de la red__
 
-All valid transactions in the network must be processed. Delegates process transactions and store them in new blocks. For this work, the delegates receive a fee. All transactions in the network must contain some type of fee as a spam countermeasure.
+Todas las transacciones válidas de la red deben ser procesadas. Los delegados las procesan y las alojan en nuevos bloques. Para que ésto funcione, los delegados reciben una comisión. Todas las transacciones deben contener algun tipo de comisión, esto es una medida para evitar el spam.
 
-The default network fee for sending an XCR transaction is 0.1%. For example, a 100 XCR transaction includes an additional fee of 0.1 XCR for a total transaction cost of 100.1 XCR.
+La comisión por defecto de la red para hacer una transacción de XCR es del 0.1%. Por ejemplo, una transacción de 100 XCR incluye un adicional de 0.1 XCR totalizando una transacción de 100.1 XCR.
 
-__The following is a list of fees for different types of transactions:__
+__La siguiente es una lista de comisiones para distintas transacciones:__
 
-* 0.1% of amount sent for a spend transaction
-* .5 XCR for registering a second passphrase
-* .100 XCR for registering a username
-* .100 XCR for registering as a delegate
-* .1 XCR to add a contact
-* .500 XCR to register a dapp
-* .5 XCR per member for registering a multi-signature group.
+* 0.1% del monto para depósitos.
+* .5 XCR por el registro de una segunda frase de seguridad
+* .100 XCR por el registro de un nombre de usuario
+* .100 XCR por registrarse como delegado
+* .1 XCR para agregar un contacto
+* .500 XCR para registrar una Dapp
+* .5 XCR por miembro para registrar un grupo multi-firma.
 
-Delegates receive the fees from all transactions of the last block cycle (101 blocks). 
-Fees are split equally between all delegates who created a block in that cycle. Delegates who missed creating a block assigned to them during that cycle are not paid.
+Los delegados reciben las comisiones de todas las transacciones del último ciclo de bloques (101 bloques).
 
-#### __iii. Peer__-__to__-__Peer__
+Las comisiones son repartidas de forma equitativa entre todos los delegados que crearon un bloque en ese ciclo. Los que no pudieron crear un bloque que le fue asignado durante el ciclo, no reciben su paga.
 
-We are using a standard P2P network[[5]](https://en.wikipedia.org/wiki/Peer-to-peer), which works on top of the http protocol, and uses json formatted data as a method of data inter-change. The P2P module captures the following information about each peer:
+#### __iii. P2P__
 
-Version
+Utilizamos una red P2P estándar[[5]](https://en.wikipedia.org/wiki/Peer-to-peer), que trabaja sobre el protocolo HTTP, y JSON como formato de intercambio de datos. El módulo P2P captura la siguiente información de cada "peer":
+
+Versión
 OSIP
-Port
+Puerto
 
-### 4. Core Features
+### 4. Características fundamentales
 
-#### __i. Usernames__
+#### __i. Nombres de usuario__
 
 Crypti allows users to register usernames. Which act as an alias to your account. Other users can send transactions to this username and the linked account will then receive it. This eliminates the need to remember long account addresses.
 
