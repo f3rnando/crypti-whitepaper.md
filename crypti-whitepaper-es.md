@@ -111,27 +111,37 @@ Tambien puede usarse para hacer llamadas al API, siempre que esté permitido por
 
 El cliente *mobile* permite al usuario acceder a su cuenta Crypti en cualquier lado. Estará disponible tanto para IOS y Android y destacada en el app store de Apple y Google Play.
 
-The backend infrastructure for the mobile client will mirror that of our desktop solution. The real change comes in the form of additions and tweaks to the user interface which will allow for a tailored experience on mobile devices. The app has been custom designed to provide a familiar and easy to use mobile interface, much like the Bitcoin or Banking apps you already use on a daily basis. It will also allow you to launch all of your favorite dapps from within the app itself. In the future, we plan to integrate device specific functionalities like the ability to utilize the fingerprint or retinal scan capabilities for added security on your account.
+La infraestructura de backend para el cliente móvil, espejará aquellas del cliente de escritorio. El cambio real viene en forma de adiciones y mejoras a la interfaz de usuario que permitirán una experiencia a medida en dispositivos móviles.
 
-### 3. Consensus
+La aplicación fue diseñada a medida para proveer una interfaz familiar y fácil de usar, muy parecida a las apps de Bitcoin o Home Banking que son utilizadas a diario masivamente.
 
-Crypti is based on the DPoS[[4]](http://wiki.bitshares.org/index.php/BitShares) (Delegated Proof of Stake) consensus mechanism. This method of consensus was originally created by the BitShares team.
+Permitirá también lanzar todas tus Dapps favoritas desde la propia aplicación. En el futuro, planeamos integrar funcionalidades específicas de los dispositivos como la habilidad de utilizar la huella dactilar o escaneo de retina para sumar seguridad a la cuenta de usaurio.
 
-DPoS is based on delegates creating blocks. Delegates are trusted accounts which are elected to be “Active Delegates”. The 101 delegate accounts with the most votes create the blocks. Other delegates are listed as “Standby Delegates”, and can advance to the top 101 list by receiving votes from the other Crypti owners. All users of Crypti have 101 votes available to elect their favorite delegates into the top 101 list. The weight of each of the 101 votes is proportional to the amount of XCR the user has in the wallet the votes are cast from. This total amount is shown on the delegate list as an “Approval”, and is listed as a percentage of the 100 million XCR available that is voted for that delegate.
+### 3. Consenso
 
-Delegate promotion to the top 101 or demotion to the standby list happens at the completion of the 101 block generation cycle. Each cycle of 101 blocks is created by the top 101 delegates in random order. The block time is 10 seconds. Newly created blocks are broadcast to the network and added to the blockchain. After 6 to 10 confirmations, a block, along with its transactions, can be considered as confirmed. A complete 101 block generation cycle takes approximately 16 minutes.
+Crypti se basa en el mecanismo de consenso denominado DPoS[[4]](http://wiki.bitshares.org/index.php/BitShares) (Delegated Proof of Stake ó Prueba de Stake delegada). Este método de consenso fue creado originalmente por el equipo de BitShares.
 
-In DPoS, forks can occur, but the longest fork wins. Delegates must be online all of the time and have sufficient uptime. Uptime is used to catalogue the reliability of a node by logging each time that it misses a block that was assigned to it. Users vote for the top 101 delegates based on several factors, uptime being one key factor used to make a determination. If a delegate drops below a certain rating, users may remove votes from the delegate in question due to poor performance.
+DPoS se basa en delegados creando bloques. Los mismos son cuentas confiables, elegidas para ser "Delegados Activos". Las 101 cuentas de delegado con la mayor cantidad de votos crean los bloques. Las restantes cuentas de delegados se denominan “Standby Delegates” o "Delegados en espera", y pueden avanzar hacial al listado de top 101 si reciben los votos suficientes de otros usuarios Crypti. Todos los usuarios tienen disponibles 101 votos para introducir a sus delegados favoritos en la lista de top 101. El peso de cada uno de los 101 votos es proporcional al monto de XCR que el usuario posee en el *wallet* desde el cual emite los mismos. Este monto total se muestra en el listado de delegados como “Approval” o "Aprobación", y se lista como porcentaje de los 100 millones de XCR disponibles con respecto a los votos de cada delegado.
 
-#### __i. Delegates__
+La promoción de los delegados a la lista de top 101, o su remoción hacia la lista de espera se concreta al momento de completar el ciclo de generacion del bloque 101. Cada ciclo de 101 bloques es creado por el top 101 de delegados de forma aleatoria. El timpo entre bloques de de 10 segundos. 
 
-The function of delegates is covered above in the Consensus section.
+Los bloques nuevos se emiten a la red y se agregan al blockchain.
+Luego de 6 a 10 confirmaciones, un bloque, junto con sus transacciones, puede ser considerado como confirmado. Un ciclo completo de generación de 101 bloques toma aproximadamente 16 minutos.
 
-To be a delegate, a user needs to register a delegate account. This is accomplished from the client user interface in either the full or lite wallet. Keep in mind that block generation is only possible in the full wallet. This means that you can register a delegate in either version of the wallet but will only be able to perform the delegate functions from a full version of the client. The account number and username will be the same after the delegate registration. All Crypti accounts are eligible to become delegates.
+En DPoS, pueden ocurrir *forks* (derivaciones), pero el fork mas largo gana. Los delegados deben estar online todo el tiempo y tener suficiente tiempo de *uptime*. Este tiempo es considerado para catalogar la fiabilidad de cada nodo, tras anotar cada vez que un nodo pierde un bloque que le fue asignado. Los usuario votan el top 101 de delgados basados en unos cuantos factores, siendo uno de estos el principal para tomar una determinación. Si un delegado queda debajo de cierta puntuación, los usuarios pueden quitarle los votos debido al bajo rendimiento.
 
-New delegates start as standby delegates. Standby delegates begin with an approval rating of 0% and will need to accrue votes from the Crypti community in order to advance to be one of the top 101 delegates. Block generation is performed by the top 101 delegates only. If you are in standby status, you will not forge any blocks.
+#### __i. Delegados__
 
-#### __ii. Network fees__
+La función de los delegados es descrita en la sección anterior, titulada "Consenso".
+
+
+Un usuario debe registrar una cuenta de delegado para poder serlo. Esto se logra desde la interfaz de usuario tanto del cliente liviano como el completo. Ten en cuenta que la generación de bloques solo es posible en el cliente completo, lo que significa que es posible crear una cuenta de delegado en ambos *wallets* pero solo en el completo se pueden realizar las tareas de delegado. El numero de cuenta y nombre de usuario serán los mismos luego de la registración como delegado. Todas las cuentas Crypti pueden ser votadas como delegados.
+
+Los nuevos delegados, empiezan como delegados "en espera". Los mismos comienzan con un porcentaje de aprobación de 0 (cero) y necesitarán juntar votos de la comunidad Crypti para poder avanzar hacia la lista de los 101 más votados y convertirse efectivamente en un delegado activo.
+La generación de bloques se realizas por los 101 más votados únicamente.
+Mientras estés en estado de espera, no generarás ningún bloque.
+
+#### __ii. Comisiones de la red__
 
 All valid transactions in the network must be processed. Delegates process transactions and store them in new blocks. For this work, the delegates receive a fee. All transactions in the network must contain some type of fee as a spam countermeasure.
 
