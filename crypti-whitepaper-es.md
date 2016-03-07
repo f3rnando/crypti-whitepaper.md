@@ -172,31 +172,34 @@ Puerto
 
 #### __i. Nombres de usuario__
 
-Crypti allows users to register usernames. Which act as an alias to your account. Other users can send transactions to this username and the linked account will then receive it. This eliminates the need to remember long account addresses.
+Crypti permite a los usuarios registrar *usernames* com alias de sus cuentas.
+Otros usuarios pueden hacer transacciones al usuario que recibirá en la cuenta enlazada. Esto elimina la necesidad de recordar cuentas con largas direcciones.
 
-The network fee for username registration is 100 XCR. Usernames may contain the following characters:
+La comisión de la red para el registro de nombres de usuario es de 100 XCR.
+Los nombres de usuario pueden contener los siguientes caracteres:
 
-* Traditional Alphabet (Upper & Lower Case): A-Z, a-z
-* Numbers: 0-9
-* Special Characters: !, @, $, &, and __.__
-* Each username is unique. 
-* The length is currently limited to 16 characters. 
+* Alfabeto tradicional (Mayúscula y minúscula): A-Z, a-z
+* Números: 0-9
+* Caracteres especiales: !, @, $, &, y __.__
+* Cada nombre de usuario es único. 
+* La cantidad máxima de caracteres es 16. 
 
-Currently, it is not possible to remove a username from your account.
+Actualmente, no es posible eliminar un nombre de usuario de la cuenta.
 
-#### __ii. Contacts__
-Crypti allows users to maintain a contact or friends list. This feature can be used to store frequently used accounts, but can also be used as a reputation system. If an account has many confirmed contacts, it may be considered more reputable than one without.
+#### __ii. Contactos__
+Con Crypti los usuarios pueden mantener una lista de contactos o amigos. Esta funcionalidad puede usarse para guardar cuentas usadas frecuentemente, pero tambien como un sistema de reputación. Si una cuenta tiene muchos contactos confirmados, puede considerarse más reputable que otra con pocos o ningunos.
 
-Contacts work like followers on Twitter. A user is added to the contact list, which will then show as a pending contact request in the user's wallet. Regardless of whether or not the other user accepts the request, they will be shown in the contact list. Once the other user accepts the request, the requester will be added to his contact list as well. Both parties now have a new confirmed contact.
+Los contactos funcional como lo hacen en Twitter. Un usuario es agregado a una lista de contactos, é inmediatamente será visible como solicitud de contacto pendiente en la cuenta del usuario. Mas allá de si el otro usuario acepta o no la solicitud, el mismo aparecerá de todas formas en la lista del solicitante. Una vez que el otro usuario acepte la solicitud, el solicitante será incorporado a su vez a la lista del otro usuario. Ambos serán entonces un contacto confirmado.
 
-The network fee for adding a new contact or accepting an incoming request is 1 XCR.
+La comisión de la red para agregar un nuevo contacto o aceptar una solicitud es de 1 XCR.
 
-#### __iii. Multi-signatures__
-Crypti allows users to create a multi-signature group. A multi-signature group consists of several Crypti users, called group members. Transactions from multi-signature groups can be configured to require some or all signatories for approval.
+#### __iii. Multi-firmas__
+Crypti soporta la creación de grupos multi-firma, que consiste en varios usuarios Crypti, considerados miembros. Las transacciones de grupos multi-firma puede ser configuradas para requerir alguna o todas las firmas para aprobación.
 
-*To achieve this a **M of N* multi-signature architecture is implemented. All members of a multi-signature group (N) are added, up to a maximum of 16 signatories, and then the required number (M) of signatures needed to approve a transaction is specified.
+*Para lograr ésto, se implementa una arquitectura multi-firma de **M of N*.
+Todos los miembros del grupo multi-firma (N) son agregados, hasta un máximo de 16 signatarios, y luego se especifica el numero requerido de firmas (M) para aprobaciones.
 
-M must be greater than 1 and less than or equal than N. N is the number of members of the multi-signature group.
+*M* debe ser mayor a 1 y menor o igual *N*, siendo este último el número de miembros del grupo multi-firma.
 
 Once you initiate a transaction from the multi-signature group, all members will see this pending transaction and decide whether to approve or ignore it. Once the required number of confirmations has been collected, the group will allow the transaction and submit it to the blockchain.
 
